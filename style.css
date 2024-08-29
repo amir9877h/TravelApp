@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --color1: #F7F7FA;
+    --color2: #9A95CA;
+    --color3: #6C65A4;
+    --color4: #363268;
+    --color5: #353346;
+    --color6: #9A97AD;
+    --color7: #25289F;
+    --whiteColor: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.right-aside {
+    width: 16%;
+    height: 100vh;
+    background-color: var(--color1);
+}
+
+.left-aside {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--whiteColor);
+}
+
+main {
+    width: 60%;
+    height: 100vh;
+    background-color: var(--whiteColor);
+}
+
+.user-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.user-section img {
+    width: 64px;
+    height: 64px;
+}
+
+.user-section p.user-name {
+    font-weight: 700;
+}
+
+.user-section p.user-info {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.transportation {
+    padding: 0 20px;
+}
+
+.transportation div {
+    margin-block-start: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.transportation span {
+    color: #5e51bf;
+    background-color: #9a95ca2f;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.transportation div span:nth-last-child(1) {
+    color: #9a95caf8;
+    background-color: transparent;
+    border: 3px dashed #9a95caf8;
+    cursor: pointer;
+}
+
+.friends {
+    padding: 20px 20px;
+}
+
+.friends div{
+    display: flex;
+    margin-top: 10px;
+}
+
+.friends img {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    object-fit: contain;
+    border: 3px solid white;
+}
+.friends img:not(img:nth-child(1)) {
+    margin-inline-start: -20px;
+}
+
+.friends span {
+    background-color: #363268c9;
+    color: white;
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    border: 3px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-start: -20px;
+    cursor: pointer;
+}
+
+.integrations {
+    padding-inline: 20px;
+}
+
+
+
+.integrations img {
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.cards {
+    padding: 20px;
+}
+
+.cards .card {
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+    background-color: #5e51bf;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 20;
+    padding: 5px 10px 10px 10px;
+}
+
+.card p {
+    color: white;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.card .card-expire {
+    font-size: 0.65rem;
+}
+
+.card .card-balance {
+    font-weight: 700;
+}
+
+.card .bg1, .bg2 {
+    background-color: #36326890;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.card .bg1 {
+    top: -110px;
+    right: -100px;
+}
+
+.card .bg2 {
+    bottom: -100px;
+    left: -100px;
+}
+
+.card .circle1, .circle2{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.601);
+    bottom: 10px;
+    right: 20px;
+    z-index: 99;
+    border-radius: 100%;
+}
+.card .circle2 {
+    right: 12px;
+}
