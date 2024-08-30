@@ -260,9 +260,9 @@ main header .tools>span {
     cursor: pointer;
 }
 
-main header .tools div input::-webkit-search-cancel-button{
-    position:relative;
-    right:-40px;    
+main header .tools div input::-webkit-search-cancel-button {
+    position: relative;
+    right: -40px;
 }
 
 main header .tools div {
@@ -277,4 +277,127 @@ main header .tools div span {
     font-weight: 500;
 }
 
+/* //////////////////// */
+
+.hotels {
+    margin-top: 20px;
+}
+
+.tab-pill-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    .custom-tab-pill {
+        display: flex;
+        gap: 20px;
+
+        .active {
+            color: black;
+            font-weight: 700;
+            position: relative;
+        }
+
+        .active::after {
+            content: '';
+            width: 30px;
+            position: absolute;
+            bottom: -5px;
+            left: 0px;
+            border-bottom: 4px solid var(--color3);
+        }
+    }
+}
+
+.tab-pill-container>a {
+    position: relative;
+    margin-right: 20px;
+}
+
+.tab-pill-container>a::after {
+    content: '>';
+    position: absolute;
+    text-align: center;
+    right: -12px;
+    top: 0;
+    transition: 0.5s;
+}
+
+.tab-pill-container>a:hover::after {
+    right: -17px;
+}
+
+.hotels .tab-pill-container a {
+    text-decoration: none;
+    color: var(--color6);
+    font-weight: 400;
+}
+
+
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-content div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    .image-card:hover .overlay {
+        margin-top: 0;
+    }
+
+    .image-card {
+        width: 280px;
+        height: 300px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin-top: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px 10px;
+            transition: 0.3s;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.841), transparent);
+
+            >p {
+                margin-bottom: 10px;
+                font-size: 1.5rem;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+    }
+}
+
+
+
+/* .image-card {
+    width: 300px;
+    height: 300px;
+
+    img{
+        width: 100%;
+    }
+} */
 /* ############################ END Main Section ################################ */
