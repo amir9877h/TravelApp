@@ -74,7 +74,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
+
 }
 
 .transportation span {
@@ -96,7 +96,7 @@ main {
     padding: 20px 20px;
 }
 
-.friends div{
+.friends div {
     display: flex;
     margin-top: 10px;
 }
@@ -108,6 +108,7 @@ main {
     object-fit: contain;
     border: 3px solid white;
 }
+
 .friends a:not(a:nth-child(1)) {
     margin-inline-start: -20px;
 }
@@ -172,7 +173,8 @@ main {
     font-weight: 700;
 }
 
-.card .bg1, .bg2 {
+.card .bg1,
+.bg2 {
     background-color: #36326890;
     width: 200px;
     height: 200px;
@@ -191,7 +193,8 @@ main {
     left: -100px;
 }
 
-.card .circle1, .circle2{
+.card .circle1,
+.circle2 {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -201,6 +204,77 @@ main {
     z-index: 99;
     border-radius: 100%;
 }
+
 .card .circle2 {
     right: 12px;
 }
+
+/* ############################ Main Section ################################ */
+main {
+    padding: 20px 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main header .welcome p:nth-child(1) {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+main header .welcome p:nth-child(2) {
+    opacity: 0.5;
+}
+
+main header .tools {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+main header .tools input {
+    border: 0;
+    background-color: var(--color1);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+main header .tools input::placeholder {
+    opacity: 0.6;
+}
+
+main header .tools>span {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    color: var(--color3);
+    background-color: var(--color1);
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main header .tools div input::-webkit-search-cancel-button{
+    position:relative;
+    right:-40px;    
+}
+
+main header .tools div {
+    position: relative;
+}
+
+main header .tools div span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: var(--color3);
+    font-weight: 500;
+}
+
+/* ############################ END Main Section ################################ */
