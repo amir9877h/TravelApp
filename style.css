@@ -337,67 +337,69 @@ main header .tools div span {
 
 .tab-content {
     margin-top: 20px;
-}
-
-.tab-content div {
-    display: grid;
-    grid-template-columns: auto auto auto;
-
-    .image-card:hover .overlay {
-        margin-top: 0;
-    }
-
-    .image-card {
-        width: 280px;
-        height: 300px;
-        border-radius: 15px;
-        overflow: hidden;
-        position: relative;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            margin-top: 300px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px 10px;
-            transition: 0.3s;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.841), transparent);
-
-            >p {
-                margin-bottom: 10px;
-                font-size: 1.5rem;
-            }
-
-            div {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 5px;
-            }
-        }
-
-    }
-}
-
-
-
-/* .image-card {
-    width: 300px;
     height: 300px;
+    overflow: hidden;
+}
 
-    img{
+.tab-pane{
+    display: none;
+    transition: 0.5s;
+}
+
+.active {
+    display: grid!important;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.tab-content .tab-pane {
+
+}
+
+.image-card {
+    width: 280px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+cursor: pointer;
+}
+
+.image-card img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+.image-card .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px 10px;
+    transition: 0.3s;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.841), transparent);
+
+    >p {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
     }
-} */
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+}
+
+.image-card:hover .overlay {
+    top: 0px;
+}
+
 /* ############################ END Main Section ################################ */
