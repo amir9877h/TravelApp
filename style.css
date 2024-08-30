@@ -101,6 +101,10 @@ main {
 
 .friends {
     padding: 20px 20px;
+    a{
+        transition: 0.5s;
+
+    }
 }
 
 .friends div {
