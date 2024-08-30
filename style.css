@@ -9,6 +9,8 @@
     --color6: #9A97AD;
     --color7: #25289F;
     --whiteColor: #ffffff;
+    --imageCardWidth: 280px;
+    --imageCardHeight: 230px;
 }
 
 * {
@@ -337,19 +339,26 @@ main header .tools div span {
 
 .tab-content {
     margin-top: 20px;
-    height: 300px;
+    height: var(--imageCardHeight);
+    position: relative;
     overflow: hidden;
 }
 
 .tab-pane{
-    display: none;
-    transition: 0.5s;
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
-.active {
+.tab-content .active {
     display: grid!important;
+    opacity: 1;
+    justify-content: space-between;
+    width: 100%;
     grid-template-columns: auto auto auto;
-    gap: 10px;
+    gap: 20px;
+    z-index: 1;
 }
 
 .tab-content .tab-pane {
@@ -357,8 +366,8 @@ main header .tools div span {
 }
 
 .image-card {
-    width: 280px;
-    height: 300px;
+    width: var(--imageCardWidth);
+    height: var(--imageCardHeight);
     border-radius: 15px;
     overflow: hidden;
     position: relative;
@@ -375,7 +384,7 @@ cursor: pointer;
     width: 100%;
     height: 100%;
     position: absolute;
-    top:300px;
+    top:var(--imageCardHeight);
     color: white;
     display: flex;
     flex-direction: column;
