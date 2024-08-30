@@ -83,13 +83,13 @@ main {
     font-size: 28px;
     padding: 10px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .transportation div span:nth-last-child(1) {
     color: #9a95caf8;
     background-color: transparent;
     border: 3px dashed #9a95caf8;
-    cursor: pointer;
 }
 
 .friends {
@@ -108,7 +108,7 @@ main {
     object-fit: contain;
     border: 3px solid white;
 }
-.friends img:not(img:nth-child(1)) {
+.friends a:not(a:nth-child(1)) {
     margin-inline-start: -20px;
 }
 
